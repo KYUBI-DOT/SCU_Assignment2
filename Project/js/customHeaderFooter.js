@@ -67,27 +67,3 @@ class CustomFooter extends HTMLElement {
 customElements.define("custom-header", CustomHeader);
 customElements.define("custom-footer", CustomFooter);
 
-{
-  /* <header>
-<div class="logo">
-  <a href="index.html">
-    <img
-      class="logo-image"
-      src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/c9ed6c65228979.5aecb0f7e395d.jpg"
-      alt="The Messi Store"
-    />
-  </a>
-  <h1>Fashion</h1>
-</div>
-
-<div class="navigation-links">
-  <a href="mens.html">Mens</a>
-  <a href="women.html">Women</a>
-  <a href="kid.html">Kids</a>
-  <a href="jewelary.html">Jewelary</a>
-  <a href="shoes.html">Shoes</a>
-  <a href="contact.html">Contact</a>
-  <a href="about.html">About</a>
-</div>
-</header> */
-}
