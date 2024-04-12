@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fashion Shop</title>
+
+    <!-- Add your CSS link here -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Css/index.css" />
+    <script src="../js/index.js"></script>
+    <link rel="stylesheet" href="../Css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <custom-header></custom-header>
+
+    <!-- Main Content Section -->
+    <main>
+      <div class="homepage-top">
+        <div class="homepage">
+          <img
+            class="homepage-image"
+            src="../assets/homepage.jpg"
+            alt="homepage"
+          />
+          <div class="homepage-description">
+            Fashion Store is a leading platform that provides hand picked
+            designer clothes, jewelary and shoes collection for men,women and
+            kids, along with any age demographic and prepares them for upcoming
+            aspirants. With a strong emphasis on enhancing fashion and
+            personality,it has become a trusted destination for wide user base
+            worldwide.
+          </div>
+        </div>
+        <div class="sign-up">
+          <h2>Subscribe</h2>
+          <h4>Sign up with your email address..</h4>
+          <form class="subscribe__form" onsubmit="subscribeFunc(event)">
+            <input
+              class="email-input"
+              type="email"
+              placeholder="Type Your Email"
+            />
+            <button class="sign-up-button">Sign Up</button>
+          </form>
+        </div>
+      </div>
+
+      <content class="content-wrapper">
+        <h2>Hi, Welcome to the our clothing store.</h2>
+        <div class="main-page-category">
+          <a href="../html/mens.html" class="category">
+            <img
+              class="main-page-image"
+              src="../assets/mens.jpg"
+              alt="mens-fashion"
+            />
+            <h2>Mens Section</h2></a
+          >
+          <a href="../html/women.html" class="category">
+            <img
+              class="main-page-image"
+              src="../assets/women.png"
+              alt="women-fashion"
+            />
+            <h2>Womens Section</h2></a
+          >
+          <a href="../html/kid.html" class="category">
+            <img
+              class="main-page-image"
+              src="../assets/kid.webp"
+              alt="kids-fashion"
+            />
+            <h2>Kids Section</h2></a
+          >
+          <a href="../html/jewelary.html" class="category">
+            <img
+              class="main-page-image"
+              src="../assets/jewelary.jpg"
+              alt="jewelary-fashion"
+            />
+            <h2>Jewelary Section</h2></a
+          >
+          <a href="../html/shoes.html" class="category">
+            <img
+              class="main-page-image"
+              src="../assets/shoes.webp"
+              alt="shoes"
+            />
+            <h2>Shoes Section</h2></a
+          >
+        </div>
+      </content>
+      <custom-footer></custom-footer>
+    </main>
+    <script src="../js/customHeaderFooter.js"></script>
+    <script>
+      const sub_form = document.querySelector(".subscribe__form");
+      function subscribeFunc(e) {
+        e.preventDefault();
+        const emaiAddress = document.querySelector(".email-input");
+        alert(`${emaiAddress.value} is subscribed.`);
+      }
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
