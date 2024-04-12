@@ -1,0 +1,36 @@
+.about-us-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-description{
+    display: grid;
+    grid-template-columns: 2fr 1fr;  
+    gap: 40px;
+}
+.about-logo{
+    height: 550px;
+}
+.about-description-right{
+    margin-top: 40px;
+    line-height: 1.4rem;
+}
+.about-us-contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+}
+
+@media only screen and (max-width: 800px) {
+    .about-description{
+        display: grid;
+        grid-template-columns:  1fr;  
+        gap:2rem;
+    }
+    .about-logo{
+        height: 25rem;
+        width: 100%;
+        object-fit: cover;
+    }
+  }
