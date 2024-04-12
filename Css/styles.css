@@ -1,0 +1,161 @@
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.homepage-top{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    margin-top: 40px;
+    gap: 40px;
+}
+
+body{
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.logo-image{
+    height: 120px;
+    width: 140px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.homepage{
+    position: relative;
+}
+.homepage-description{
+    position: absolute;
+    padding: 16px;
+    width: 80%;
+    bottom: 24px;
+    left: 24px;
+    color: white;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    font-size: medium;
+    line-height: 1.4rem;
+}
+.sign-up{
+    background-color:#B0C3D0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;gap: 1rem;
+   
+}
+.email-input{
+    background-color: transparent;
+    outline: none;
+    padding: 16px;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    width: 50%;
+}
+.sign-up-button{
+    background-color: black;
+    color: white;
+    font: large;
+    border-radius: 8px;
+    padding: 16px 32px;
+    cursor: pointer;
+    margin-top: 24px;
+    z-index: 1;
+    width: 50%;
+}
+.sign-up-button:hover{
+    background-color: white;
+    color: black;
+}
+.content-wrapper{
+    width: 80%;
+    margin-inline: auto;
+    margin-top: 24px;
+}
+.main-page-category{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 40px;
+}
+.main-page-image{
+    height: 350px;
+    max-width: 350px;
+    object-fit: contain;
+}
+.category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #e6e6e6;
+    text-decoration: none;
+}
+footer{
+    background-color: #002423;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+}
+.footer-nav-link{
+    color: white;
+    bottom: 0;
+}
+
+/* mens page */
+.product-info{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding-block: 16px;
+}
+.buying-button{
+    background-color: black;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    z-index: 1;
+}
+.buying-button:hover{
+    background-color: white;
+    color: black;
+}
+.subscribe__form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .homepage-top{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+        margin-top: 40px;
+        gap: 40px;
+    }
+    .content-wrapper{
+       padding-inline: 1rem;
+       margin-top: 1.5rem;
+    }
+    .main-page-category{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
